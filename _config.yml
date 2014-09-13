@@ -7,14 +7,14 @@ permalink:        pretty
 
 # Setup
 title:            Colin Willson
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+tagline:          'Resume'
+description:      'Noob blogger, technology lover, & more.'
 url:              http://CWftw.me
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Colin Willson'
+  url:            https://twitter.com/cwftw
 
 paginate:         5
 
@@ -22,4 +22,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/CWftw/cwftw.github.io
