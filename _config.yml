@@ -17,6 +17,7 @@ author:
   url:            https://twitter.com/cwftw
 
 paginate:         5
+destination:      _site/blog
 
 # Custom vars
 version:          2.1.0
