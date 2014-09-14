@@ -16,7 +16,7 @@ author:
   name:           'Colin Willson'
   url:            https://twitter.com/cwftw
 
-paginate:         2
+paginate:         5
 
 # Custom vars
 version:          2.1.0
