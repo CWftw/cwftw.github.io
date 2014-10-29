@@ -239,3 +239,9 @@ a.sidebar-nav-item:focus {
   color: #aa759f;
 }
 
+/* Grey */
+.theme-base-grey .sidebar {
+  background-color: #919090;
+}
+
+
