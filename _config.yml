@@ -3,7 +3,8 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-permalink:        /blog/:year/:month/:day/:title
+permalink:        pretty
+relative_permalinks: true
 
 # Setup
 title:            Colin Willson
