@@ -8,18 +8,30 @@ title: Steam Game Collecting
 <script src="{{ site.baseurl }}public/js/steam.js"></script>
 
 <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 
 <div class="form">
-	<form>
-        <p>
-            <label for="games">Enter the games to search for:</label>
-            <textarea id="games"></textarea>
-        </p>
-        <p>
-            <label for="games">Steam username:</label>
-            <input id="username" type="text"/>
-        </p>
-        <p><input id="search" type="button" value="Search"/></p>
+	<form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="games">Enter the games to search for:</label>
+                <textarea id="games"></textarea>
+            </div>
+        
+            <div class="pure-control-group">
+                <label for="games">Enter the games to search for:</label>
+                <textarea id="games"></textarea>
+            </div>
+            
+            <div class="pure-control-group">
+                <label for="games">Steam username:</label>
+                <input id="username" type="text"/>
+            </div>
+            
+            <div class="pure-control-group">
+                <input id="search" type="button" value="Search"/>
+            </div>
+        </fieldset>
 	</form>
 </div>
 
