@@ -1,16 +1,14 @@
 var PROXY = "http://jsonp.nodejitsu.com/?url=";
 var allGames;
+var enteredGames;
 
 $(document).ready(function()
 {
     $("#search").click(searchClick);
     
     $.getJSON(PROXY + "http://cwftw.site90.net/steam.php?function=allGames", function (data) {
-        console.log(data);
         allGames = data;
-        $.each(data.applist.apps.app, function (index, item) {
-            console.log(item);
-        });
+        console.log(data);
    }); 
 });
 
@@ -18,11 +16,31 @@ function searchClick()
 {
     if($("#games").val().length > 0 && $("#profile").val().length > 0)
     {
-        alert("Good");
+        readLines();
     } else
     {
-        alert("Invalid input");
+        alert("Invalid input!");
     }
+}
+
+function readLines()
+{
+    var lines = $("#games").val().split('\n');
+    $.each(lines, function(){
+        matchTitle(this);
+    });
+}
+
+function matchTitle(title)
+{
+    $.each(allGames.applist.apps.app, function (index, item) {
+        console.log(item);
+        if(item.name == title)
+        {
+            enteredGames.push(item.appid);
+            break;
+        }
+    });
 }
 
 function generateTable()
