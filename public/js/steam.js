@@ -32,7 +32,7 @@ function searchClick()
 
 function getId(url)
 {
-        $.getJSON(url + "?xml=1", function (data) {
+        $.getJSON(url + "?xml=1?callback=?", function (data) {
             console.log(data);
    }); 
 }
