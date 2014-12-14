@@ -1,4 +1,4 @@
-var PROXY = "ttp://jsonp.nodejitsu.com/?url=";
+var PROXY = "http://jsonp.nodejitsu.com/?url=";
 var allGames;
 
 $(document).ready(function()
