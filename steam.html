@@ -1,15 +1,15 @@
 ---
 layout: page
 title: Steam Game Collecting
+custom_css:
+- //cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css
+custom_js:
+- //ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
+- //cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js
+- {{ site.baseurl }}public/js/steam.js
 ---
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
-<script src="{{ site.baseurl }}public/js/steam.js"></script>
-
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
-
-<div class="form">
+<div id="form">
 	<form>
         <fieldset>
             <legend>Compare owned games with a list of offers</legend>
