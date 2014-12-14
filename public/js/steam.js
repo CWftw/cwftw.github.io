@@ -2,7 +2,7 @@ var allGames;
 
 $(document).ready(function()
 {
-    $("#search").onclick(searchClick);
+    $("#search").click(searchClick);
     
     $.getJSON("http://cwftw.hj.cx/steam.php?function=allGames", function (data) {
         console.log(data);
@@ -17,7 +17,7 @@ function searchClick()
 {
     if($("#games").val().length > 0 && $("#profile").val().length > 0)
     {
-        
+        alert("Good");
     } else
     {
         alert("Invalid data");
