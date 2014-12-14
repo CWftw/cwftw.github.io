@@ -38,7 +38,7 @@ function matchTitle(title)
         if(item.name == title)
         {
             enteredGames.push(item.appid);
-            break;
+            return false;
         }
     });
 }
