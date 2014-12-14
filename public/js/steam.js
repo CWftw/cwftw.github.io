@@ -21,7 +21,7 @@ function searchClick()
         alert("Good");
     } else
     {
-        alert("Invalid data");
+        alert("Invalid input");
     }
 }
 
