@@ -5,7 +5,7 @@ $(document).ready(function()
 {
     $("#search").click(searchClick);
     
-    $.getJSON("http://cwftw.hj.cx/steam.php?function=allGames?jsoncallback=?", function (data) {
+    $.getJSON("http://cwftw.hj.cx/steam.php?function=allGames&jsoncallback=?", function (data) {
         console.log(data);
         allGames = data;
         $.each(data.applist.apps.app, function (index, item) {
