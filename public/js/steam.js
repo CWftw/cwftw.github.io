@@ -32,9 +32,18 @@ function searchClick()
 
 function getId(url)
 {
-        $.getJSON(url + "?xml=1?callback=?", function (data) {
-            console.log(data);
-   }); 
+    $.ajax({
+        type: "GET",
+        url: url + "?xml=1",
+        dataType: "jsonp xml",
+        success: function(xmlResponse) {
+            console.log(xmlResponse);
+        }
+    });
+    
+//        $.getJSON(url + "?xml=1?callback=?", function (data) {
+//            console.log(data);
+//   }); 
 }
     
 
