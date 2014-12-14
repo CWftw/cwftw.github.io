@@ -1,15 +1,30 @@
-	var PROXY = "https://jsonp.nodejitsu.com/?url=";
-	var URL = "http://api.steampowered.com/ISteamApps/GetAppList/v0001/";
+var allGames;
 
-	$.getJSON(PROXY + URL, function (data) {
+$(document).ready(function()
+{
+    $("#search").onclick(searchClick);
+    
+    $.getJSON("http://cwftw.hj.cx/steam.php?function=allGames", function (data) {
+        console.log(data);
+        allGames = data;
+        $.each(data.applist.apps.app, function (index, item) {
+            console.log(item);
+        });
+   }); 
+});
 
-		console.log(data);
-		$.each(data.applist.apps.app, function (index, item) {
-			console.log(item.name);
-		});
-	});
-	
-	function generateTable()
-	{
-		//
-	}
+function searchClick()
+{
+    if($("#games").val().length > 0 && $("#profile").val().length > 0)
+    {
+        
+    } else
+    {
+        alert("Invalid data");
+    }
+}
+
+function generateTable()
+{
+    //
+}
