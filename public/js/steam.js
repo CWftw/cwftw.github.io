@@ -1,10 +1,11 @@
+var PROXY = "ttp://jsonp.nodejitsu.com/?url=";
 var allGames;
 
 $(document).ready(function()
 {
     $("#search").click(searchClick);
     
-    $.getJSON("http://cwftw.hj.cx/steam.php?function=allGames", function (data) {
+    $.getJSON(PROXY + "http://cwftw.hj.cx/steam.php?function=allGames", function (data) {
         console.log(data);
         allGames = data;
         $.each(data.applist.apps.app, function (index, item) {
