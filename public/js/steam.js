@@ -33,6 +33,7 @@ function readLines()
 
 function matchTitle(title)
 {
+    console.log(allGames);
     $.each(allGames.applist.apps.app, function (index, item) {
         console.log(item);
         if(item.name == title)
