@@ -1,6 +1,6 @@
 var PROXY = "http://jsonp.nodejitsu.com/?url=";
 var allGames;
-var enteredGames;
+var enteredGames = [];
 
 $(document).ready(function()
 {
@@ -16,12 +16,27 @@ function searchClick()
 {
     if($("#games").val().length > 0 && $("#profile").val().length > 0)
     {
-        readLines();
+        try
+        {
+            getId($("#profile").val());
+            readLines();
+        } catch (ex)
+        {
+            alert("Invalid profile URL!");
+        }
     } else
     {
         alert("Invalid input!");
     }
 }
+
+function getId(url)
+{
+        $.getJSON(url + "?xml=1", function (data) {
+            console.log(data);
+   }); 
+}
+    
 
 function readLines()
 {
