@@ -6,7 +6,7 @@ $(document).ready(function()
 {
     $("#search").click(searchClick);
     
-    $.getJSON(PROXY + "http://cwftw.site90.net/steam.php?function=allGames", function (data) {
+    $.getJSON("http://api.steampowered.com/ISteamApps/GetAppList/v0001/", function (data) {
         allGames = data;
         console.log(data);
    }); 
