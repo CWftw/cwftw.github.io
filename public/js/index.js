@@ -1,1 +1,3 @@
-gh
+$(document).ready(function () {
+    Galleria.run('.galleria');
+});
