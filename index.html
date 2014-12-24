@@ -7,29 +7,8 @@ title: Home
     <div class="post">
         <h1 class="post-title">
             {{ page.title }}
-    </h1>
-        <h2>Recent Projects</h2>
-        <h3>Bird Hunt</h3>
-        <p>A Duck Hunt-style game built using XNA which tasks players to shoot birds (and bees) as efficiently as possible to conserve ammo.</p>
-        <img src="/public/images/projects/birdHunt_title.PNG" alt="Bird Hunt Title Screen" width=100% />
-        <img src="/public/images/projects/birdHunt_action.PNG" alt="Bird Hunt Action Screen" width=100% />
-
-        <h3>SwipeTask</h3>
-        <p>A simple, cloud-enabled todo app with an easy to use interface. Uses the Parse app platform. Available on the Amazon app store.</p>
-        <img src="/public/images/projects//swipeTask_tasks.PNG" alt="Bird Hunt Title Screen" width=100% />
-    </div>
-    
-    <h2 class="post-title">Recent Posts</h2>
-    {% for post in paginator.posts limit:1 %}
-    <div class="post">
-        <h3 class="post-title">
-            <a href="{{ post.url }}">
-                {{ post.title }}
-            </a>
         </h1>
-
-        <span class="post-date">{{ post.date | date_to_string }}</span>
-        {{ post.content }}
+        <h3>Colin Willson</h3>
+        <p>A Computer Programmer/Analyst student at Conestoga College</p>
     </div>
-    {% endfor %}   
 </div>

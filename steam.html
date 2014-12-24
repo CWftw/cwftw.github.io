@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Steam Game Collecting
 custom_external_css: "//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css"
 custom_external_js:
@@ -8,29 +8,38 @@ custom_external_js:
 custom_js: "steam.js"
 ---
 
-<div id="form">
-    <form>
-        <fieldset>
-            <legend>Compare owned games with a list of offers</legend>
+<div class="posts">
+    <div class="post">
+        <h1 class="post-title">
+            {{ page.title }}
+        </h1>
 
-            <p>
-                <label for="games">Steam profile URL:</label>
-                <br/>
-                <input id="profile" type="text" />
-            </p>
+        <div id="form">
+            <form>
+                <fieldset>
+                    <legend>Compare owned games with a list of offers</legend>
 
-            <p>
-                <label for="games">Games to search for:</label>
-                <br/>
-                <textarea id="games" rows="10"></textarea>
-            </p>
+                    <p>
+                        <label for="games">Steam profile URL:</label>
+                        <br/>
+                        <input id="profile" type="text" />
+                    </p>
 
-            <p>
-                <input id="search" type="button" value="Search" />
-            </p>
-        </fieldset>
-    </form>
-</div>
+                    <p>
+                        <label for="games">Games to search for:</label>
+                        <br/>
+                        <textarea id="games" rows="10"></textarea>
+                    </p>
 
-<div id="data">
+                    <p>
+                        <input id="search" type="button" value="Search" />
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="data">
+        </div>
+
+    </div>
 </div>
