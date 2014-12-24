@@ -8,14 +8,14 @@ relative_permalinks: true
 
 # Setup
 title:            Colin Willson
-tagline:          'Resume'
+tagline:          'Noob blogger, technology lover, & more.'
 description:      'Noob blogger, technology lover, & more.'
 url:              http://CWftw.me
 baseurl:          /
 
 author:
   name:           'Colin Willson'
-  url:            https://twitter.com/cwftw
+  url:            http://CWftw.me
 
 paginate:         5
 paginate_path:    "/blog/page:num"
