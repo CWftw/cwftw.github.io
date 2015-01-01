@@ -13,7 +13,7 @@ function validate() {
 	{
 		if(validateEmail(email))
 		{
-			return true;
+			valid = true;
 		} else
 		{
 			error+= "\nEmail is not valid!";
