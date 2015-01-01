@@ -11,24 +11,24 @@ custom_js: "contact.js"
         {{ page.title }}
         </h1>
 
-        <form method="post" action="//formspree.io/colin@cwftw.me">
+        <form method="post" action="//formspree.io/colin@cwftw.me" onsubmit="return validate();">
             <input type="hidden" name="_subject" value="CWftw.me: New Contact Submission!" />
             
             <p>
                 <label for="name">Name:</label>
-                <input type="text" name="name" />
+                <input id="name" type="text" name="name" />
 				<span class="required">*</span>
             </p>
             
             <p>
-                <label for="email">Email:</label>
-                <input type="text" name="_replyto" />
+                <label for="_replyto">Email:</label>
+                <input id="email" type="text" name="_replyto" />
 				<span class="required">*</span>
             </p>
             
             <p>
                 <label for="email">Message:</label>
-                <textarea name="body" rows="10"></textarea>
+                <textarea id=="body" name="body" rows="10"></textarea>
 				<span class="required">*</span>
             </p>
             
