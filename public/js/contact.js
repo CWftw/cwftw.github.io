@@ -23,6 +23,7 @@ function validate() {
 	if(error != "")
 	{
 		valid = false;
+		alert(error);
 	}
 	
 	return valid;
