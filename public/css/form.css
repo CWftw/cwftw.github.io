@@ -11,3 +11,7 @@ display: block
 {
 margin-left: 4.5em;
 }
+
+.required {
+	color: red;
+}
