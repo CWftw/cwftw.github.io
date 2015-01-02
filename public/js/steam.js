@@ -20,7 +20,7 @@ function searchClick() {
             alert("Invalid profile URL!");
         }
     } else {
-        alert("Invalid input!");
+        alert("Please fill in all required fields!");
     }
 }
 
