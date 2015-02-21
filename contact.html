@@ -2,7 +2,6 @@
 layout: default
 title: Contact
 custom_css: "contact.css"
-custom_css: "contact.css"
 custom_js: "contact.js"
 ---
 
@@ -14,28 +13,28 @@ custom_js: "contact.js"
 
         <form method="post" action="//formspree.io/colin@cwftw.me" onsubmit="return validate();">
             <input type="hidden" name="_subject" value="CWftw.me: New Contact Submission!" />
-            
+
             <p>
                 <label for="name">Name:</label>
                 <input id="name" type="text" name="name" />
-				<span class="required">*</span>
+                <span class="required">*</span>
             </p>
-            
+
             <p>
                 <label for="email">Email:</label>
                 <input id="email" type="text" name="_replyto" />
-				<span class="required">*</span>
+                <span class="required">*</span>
             </p>
-            
+
             <p>
                 <label for="body">Message:</label>
                 <textarea id="body" name="body" rows="10"></textarea>
-				<span class="required">*</span>
+                <span class="required">*</span>
             </p>
-            
-            <p class="submit">
+
+            <p>
                 <input type="submit" value="Send" />
             </p>
-        </form>        
+        </form>
     </div>
 </div>
