@@ -13,28 +13,24 @@ custom_js: "contact.js"
 
         <form method="post" action="//formspree.io/colin@cwftw.me" onsubmit="return validate();">
             <input type="hidden" name="_subject" value="CWftw.me: New Contact Submission!" />
+            <input type="hidden" name="_next" value="http://CWftw.me/thanks/" />
 
-            <p>
-                <label for="name">Name:</label>
-                <input id="name" type="text" name="name" />
-                <span class="required">*</span>
-            </p>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" />
+            <span class="required">*</span>
+            <br/>
 
-            <p>
-                <label for="email">Email:</label>
-                <input id="email" type="text" name="_replyto" />
-                <span class="required">*</span>
-            </p>
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="_replyto" />
+            <span class="required">*</span>
+            <br/>
 
-            <p>
-                <label for="body">Message:</label>
-                <textarea id="body" name="body" rows="10"></textarea>
-                <span class="required">*</span>
-            </p>
+            <label for="body">Message:</label>
+            <textarea id="body" name="body" rows="10"></textarea>
+            <span class="required">*</span>
+            <br/>
 
-            <p>
-                <input type="submit" value="Send" />
-            </p>
+            <input type="submit" value="Send" />
         </form>
     </div>
 </div>
