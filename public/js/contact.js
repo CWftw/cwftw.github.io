@@ -1,6 +1,5 @@
 function validate() {
     var error = "";
-    var valid = false;
 
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -9,19 +8,17 @@ function validate() {
     if (name.trim() == "" || email.trim() == "" || body.trim() == "") {
         error = "Please fill in all required fields!";
     } else {
-        if (validateEmail(email)) {
-            valid = true;
-        } else {
+        if (!validateEmail(email)) {
             error = "Invalid email!";
         }
     }
 
     if (error != "") {
-        valid = false;
         alert(error);
+        return false;
     }
 
-    return valid;
+    return true;
 }
 
 function validateEmail(email) {
