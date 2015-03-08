@@ -10,6 +10,10 @@ input[type=submit] {
     margin-left: 1em;
 }
 
+input[type=text] {
+    margin-bottom: 0.5em;
+}
+
 .required {
     color: red;
 }
