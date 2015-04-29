@@ -7,6 +7,6 @@ img {
     float: left;
 }
 
-.half.halfpad {
-    padding-right: 4%;  
+.halfpad {
+    margin-right: 4%;  
 }
