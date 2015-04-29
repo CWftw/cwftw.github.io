@@ -3,6 +3,7 @@ img {
 }
 
 .half {
-    width: 50%;
+    width: 45%;
     float: left;
+    padding-right: 10%;
 }
