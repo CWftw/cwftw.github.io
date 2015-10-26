@@ -8,8 +8,8 @@ relative_permalinks: true
 
 # Setup
 title:            Colin Willson
-tagline:          '{Aspiring Programmer; Occasional Blogger; Avid Gamer;}'
-description:      '{Aspiring Programmer;<br/> Occasional Blogger;<br/> Avid Gamer;}'
+tagline:          'Programming Student at Conestoga College'
+description:      'Programming Student at Conestoga College'
 url:              http://CWftw.me
 baseurl:          /
 
