@@ -1,0 +1,12 @@
+img {
+    width: 100%;
+}
+
+.half {
+    width: 48%;
+    float: left;
+}
+
+.halfpad {
+    margin-right: 4%;  
+}

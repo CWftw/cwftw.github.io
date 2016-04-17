@@ -1,0 +1,47 @@
+---
+layout: default
+title: Steam Game Collecting
+custom_external_css: "//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css"
+custom_external_js:
+- "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+- "//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"
+custom_js: "steam.js"
+custom_css: "steam.css"
+---
+
+<div class="posts">
+    <div class="post">
+        <h1 class="post-title">
+        {{ page.title }}
+        </h1>
+
+        <div id="form">
+            <form>
+                <fieldset>
+                    <legend>Compare owned games with a list of offers</legend>
+
+                    <p>
+                        <label for="games">Steam profile URL:</label>
+                        <br/>
+                        <input id="profile" type="text" />
+                        <span class="required">*</span>
+                    </p>
+
+                    <p>
+                        <label for="games">Games to search for:</label>
+                        <br/>
+                        <textarea id="games" rows="10"></textarea>
+                        <span class="required">*</span>
+                    </p>
+
+                    <p>
+                        <input id="search" type="button" value="Search" />
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="data">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+---
+layout: default
+title: Contact
+custom_css: "contact.css"
+custom_js: "contact.js"
+---
+
+<div class="posts">
+    <div class="post">
+        <h1 class="post-title">
+        {{ page.title }}
+        </h1>
+
+        <form method="post" action="//formspree.io/colin@cwftw.me" onsubmit="return validate();">
+            <input type="hidden" name="_subject" value="CWftw.me: New Contact Submission!" />
+            <input type="hidden" name="_next" value="http://CWftw.me/thanks/" />
+
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" />
+            <span class="required">*</span>
+            <br/>
+
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="_replyto" />
+            <span class="required">*</span>
+            <br/>
+
+            <label for="body">Message:</label>
+            <textarea id="body" name="body" rows="10"></textarea>
+            <span class="required">*</span>
+            <br/>
+
+            <input type="submit" value="Send" />
+        </form>
+    </div>
+</div>

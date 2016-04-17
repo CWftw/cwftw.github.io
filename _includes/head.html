@@ -8,7 +8,7 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ page.title }} &middot; {{ site.title }}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
@@ -18,7 +18,31 @@
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700%7CAbril+Fatface">
+    
+  {% if page.custom_external_css %}
+    {% for stylesheet in page.custom_external_css %}
+    <link rel="stylesheet" href="{{ stylesheet }}">
+    {% endfor %}
+  {% endif %}
+    
+  {% if page.custom_external_js %}
+    {% for js_file in page.custom_external_js %}
+    <script src="{{ js_file }}"></script>
+    {% endfor %}
+  {% endif %}    
+ 
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}public/css/{{ stylesheet }}">
+    {% endfor %}
+  {% endif %}
+    
+  {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+    <script src="{{ site.baseurl }}public/js/{{ js_file }}" type="text/javascript"></script>
+    {% endfor %}
+  {% endif %}
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png">

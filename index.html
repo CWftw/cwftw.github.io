@@ -4,34 +4,56 @@ title: Home
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <div class="post">
+        <h1 class="post-title">
+            Colin Willson
+        </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+<!--        <p>A Computer Programmer/Analyst student at Conestoga College</p>-->
+        <p>Software Developer, <a href="https://www.brocksolutions.com/" target="_blank">Brock Solutions</a></p>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+        <h3>Skills Summary</h3>
+        <hr/>
+        <ul>
+            <li>Experienced in a number of programming languages and frameworks including: C#, ASP.NET MVC/Web API, WCF, NUnit, XNA, Java, JUnit, PL/SQL, HTML/CSS/JavaScript, AngularJS, Less, jQuery Mobile, ActionScript 3, PHP and VBA (Microsoft Access)</li>
+            <li>Familiarized with a wide variety of Integrated Development Environments (IDEs) and tools including: Visual Studio, Android Studio, NetBeans, Eclipse, Adobe Flash Professional, Git, NPM, Gulp, Oracle SQL Developer, MySQL Workbench and Visual Paradigm</li>
+            <li>Capable of writing technical and business documents clearly and concisely, including: user manuals, memos, reports, proposals and instructions</li>
+            <li>Able to interpret users’ problems to best document their issues and support them</li>
+            <li>Manages time effectively to consistently meet deadlines and remain punctual</li>
+            <li>Participates thoroughly in group discussions by listening to others and contributing ideas, leading to ideal solutions</li>
+            <li>Manages group projects when needed and delegates responsibilities to group members in order to achieve the best possible results</li>
+        </ul>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+        <h3>Education</h3>
+        <hr/>
+        <h4>Computer Programmer/Analyst (Co-op) Program</h4>
+        <p>Conestoga College, Kitchener, Ontario</p>
+        <ul>
+            <li>Dean’s Honour List</li>
+            <li>Notable Courses: Programming: Microsoft Enterprise Applications/Distributed Applications Development/Mobile Applications II/Java Web Technologies/Software Quality Assurance/Object Oriented Game Programming, Technology Infrastructure: Networking/Network Operating Systems, Database: SQL/Application Development, Systems Development: Mobile Application Design/Computer Security, Effective Technical Communications, Interpersonal And Group Dynamics</li>
+        </ul>
+
+        <h3>Work Experience</h3>
+        <hr/>
+        <h4>Front-end Developer</h4>
+        <p>Alaunus</p>
+        <ul>
+            <li>Planned, built and tested new features for a large AngularJS healthcare application</li>
+            <li>Developed and maintained automated API testing suites</li>
+            <li>Wrote and updated user manuals and other support documentation</li>
+            <li>Recorded and edited training webinars and help videos for the user self-service portal</li>
+        </ul>
+
+        <h4>Helpdesk Assistant</h4>
+        <p>St. Joseph’s Health Centre Guelph</p>
+        <ul>
+            <li>Provided excellent software and hardware technical support to over 650 users by way of phone, email and direct communications</li>
+            <li>Designed and developed multiple PowerShell, VBScript and Batch scripts in order to increase the speed of server maintenance and hardware deployments</li>
+            <li>Created detailed technical documentation and instructions for programming projects and complex deployment procedures</li>
+            <li>Performed various tasks with Active Directory and Exchange servers including adding and removing users, mailboxes and folder permissions</li>
+        </ul>
+
+        <hr/>
+        <p>Expanded education and work experience available on <a href="{{ site.social.linkedin }}">LinkedIn</a>.</p>
+    </div>
 </div>
