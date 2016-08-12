@@ -8,29 +8,34 @@ custom_js: "contact.js"
 <div class="posts">
     <div class="post">
         <h1 class="post-title">
-        {{ page.title }}
+            {{ page.title }}
         </h1>
 
-        <form method="post" action="//formspree.io/colin@cwftw.me" onsubmit="return validate();">
+        <form method="post" action="https://formspree.io/Colin@CWftw.me" onsubmit="return validate();">
             <input type="hidden" name="_subject" value="CWftw.me: New Contact Submission!" />
             <input type="hidden" name="_next" value="http://CWftw.me/thanks/" />
 
-            <label for="name">Name:</label>
-            <input id="name" type="text" name="name" />
-            <span class="required">*</span>
-            <br/>
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" />
+                <span class="required">*</span>
+            </div>
 
-            <label for="email">Email:</label>
-            <input id="email" type="text" name="_replyto" />
-            <span class="required">*</span>
-            <br/>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="_replyto" />
+                <span class="required">*</span>
+            </div>
 
-            <label for="body">Message:</label>
-            <textarea id="body" name="body" rows="10"></textarea>
-            <span class="required">*</span>
-            <br/>
+            <div>
+                <label for="body">Message:</label>
+                <textarea id="body" name="body" rows="10"></textarea>
+                <span class="required">*</span>
+            </div>
 
-            <input type="submit" value="Send" />
+            <div class="button">
+                <button type="submit">Send</button>
+            </div>
         </form>
     </div>
 </div>
