@@ -15,9 +15,9 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css">
+  <link rel="stylesheet" href="{{ "/" | relative_url }}public/css/poole.css">
+  <link rel="stylesheet" href="{{ "/" | relative_url }}public/css/syntax.css">
+  <link rel="stylesheet" href="{{ "/" | relative_url }}public/css/hyde.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700%7CAbril+Fatface">
     
   {% if page.custom_external_css %}
@@ -34,19 +34,19 @@
  
   {% if page.custom_css %}
     {% for stylesheet in page.custom_css %}
-    <link rel="stylesheet" href="{{ site.baseurl }}public/css/{{ stylesheet }}">
+    <link rel="stylesheet" href="{{ "/" | relative_url }}public/css/{{ stylesheet }}">
     {% endfor %}
   {% endif %}
     
   {% if page.custom_js %}
     {% for js_file in page.custom_js %}
-    <script src="{{ site.baseurl }}public/js/{{ js_file }}" type="text/javascript"></script>
+    <script src="{{ "/" | relative_url }}public/js/{{ js_file }}" type="text/javascript"></script>
     {% endfor %}
   {% endif %}
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/" | relative_url }}public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="{{ "/" | relative_url }}public/favicon.ico">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
