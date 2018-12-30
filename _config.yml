@@ -13,6 +13,7 @@ url:              http://CWftw.me
 baseurl:          /
 
 author:
+  twitter:        CWftw
   name:           'Colin Willson'
   url:            http://CWftw.me
 
@@ -26,6 +27,17 @@ github:
   repo:           https://github.com/CWftw/cwftw.github.io
 
 social:
-  twitter:        https://twitter.com/CWftw
-  google:         https://plus.google.com/+ColinWillson
+  name:           Colin Willson
+  links:
+    - https://twitter.com/CWftw
+    - https://ca.linkedin.com/in/colinwillson/
   linkedin:       https://ca.linkedin.com/in/colinwillson/
+
+twitter:
+  username: CWftw
+  card: summary
+
+google_site_verification: DGYTaEKlzIPYkA12p7B2SM1uqsTKvHANwLC4Z0EDXdo
+
+plugins:
+  - jekyll-seo-tag
